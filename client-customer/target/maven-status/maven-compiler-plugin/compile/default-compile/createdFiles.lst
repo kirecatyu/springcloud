@@ -1,7 +1,0 @@
-com\local\springboot\client\clientcustomer\controller\CustomerController.class
-com\local\springboot\client\clientcustomer\ClientCustomerApplication.class
-com\local\springboot\client\clientcustomer\feign\MyFeignFallbackFactory.class
-com\local\springboot\client\clientcustomer\config\FeignConfig.class
-com\local\springboot\client\clientcustomer\feign\MyFeignFallback.class
-com\local\springboot\client\clientcustomer\feign\MyFeign.class
-com\local\springboot\client\clientcustomer\config\RestTemplateConfig.class

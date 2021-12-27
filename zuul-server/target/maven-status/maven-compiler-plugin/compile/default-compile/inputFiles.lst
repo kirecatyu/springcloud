@@ -1,8 +1,0 @@
-E:\idea\springcloud-parent\zuul-server\src\main\java\com\local\springboot\zuul\zuulserver\config\ZuulConfiguration.java
-E:\idea\springcloud-parent\zuul-server\src\main\java\com\local\springboot\zuul\zuulserver\ZuulServerApplication.java
-E:\idea\springcloud-parent\zuul-server\src\main\java\com\local\springboot\zuul\zuulserver\config\FilterConfiguration.java
-E:\idea\springcloud-parent\zuul-server\src\main\java\com\local\springboot\zuul\zuulserver\feign\MyFeign.java
-E:\idea\springcloud-parent\zuul-server\src\main\java\com\local\springboot\zuul\zuulserver\filter\MyAccessFilter.java
-E:\idea\springcloud-parent\zuul-server\src\main\java\com\local\springboot\zuul\zuulserver\feign\MyFeignFallbackFactory.java
-E:\idea\springcloud-parent\zuul-server\src\main\java\com\local\springboot\zuul\zuulserver\controller\TestController.java
-E:\idea\springcloud-parent\zuul-server\src\main\java\com\local\springboot\zuul\zuulserver\feign\MyFeignFallback.java

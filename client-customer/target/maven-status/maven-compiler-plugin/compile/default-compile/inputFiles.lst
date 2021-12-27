@@ -1,7 +1,0 @@
-E:\idea\springcloud-parent\client-customer\src\main\java\com\local\springboot\client\clientcustomer\controller\CustomerController.java
-E:\idea\springcloud-parent\client-customer\src\main\java\com\local\springboot\client\clientcustomer\feign\MyFeign.java
-E:\idea\springcloud-parent\client-customer\src\main\java\com\local\springboot\client\clientcustomer\config\FeignConfig.java
-E:\idea\springcloud-parent\client-customer\src\main\java\com\local\springboot\client\clientcustomer\feign\MyFeignFallbackFactory.java
-E:\idea\springcloud-parent\client-customer\src\main\java\com\local\springboot\client\clientcustomer\feign\MyFeignFallback.java
-E:\idea\springcloud-parent\client-customer\src\main\java\com\local\springboot\client\clientcustomer\ClientCustomerApplication.java
-E:\idea\springcloud-parent\client-customer\src\main\java\com\local\springboot\client\clientcustomer\config\RestTemplateConfig.java
