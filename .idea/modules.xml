@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/client-customer/client-customer.iml" filepath="$PROJECT_DIR$/client-customer/client-customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client-provider/client-provider.iml" filepath="$PROJECT_DIR$/client-provider/client-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code-generator/code-generator.iml" filepath="$PROJECT_DIR$/code-generator/code-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ribbon-provider/ribbon-provider.iml" filepath="$PROJECT_DIR$/ribbon-provider/ribbon-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-parent.iml" filepath="$PROJECT_DIR$/springcloud-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso-server/sso-server.iml" filepath="$PROJECT_DIR$/sso-server/sso-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/zuul-server/zuul-server.iml" />
+    </modules>
+  </component>
+</project>

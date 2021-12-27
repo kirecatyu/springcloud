@@ -1,0 +1,64 @@
+var id;
+$(function() {
+    id = UrlParm.parm("id");
+    vm = new Vue({
+        el: "#rrapp",
+        data: {
+            $pathName: {
+            },
+        },
+        methods: {
+            saveOrUpdate: function() {
+                var url =  "${pathName}/saveOrUpdate";
+                var b1 = andy.fromVerify("#rrapp");
+                if(b1){
+                    $.ajax({
+                        type: "POST",
+                        url: baseURL + url,
+                        contentType: "application/json",
+                        dataType: "json",
+                        data: JSON.stringify(vm.$pathName),
+                        success: function(r){
+                            if(r.code === 200){
+                                message("成功", "操作成功", parent.refresh,'${pathName}');
+                            }else{
+                                message("错误", "操作失败");
+                            }
+                        }
+                    });
+                };
+
+            },
+            //绑定时间控件
+            dateBlock: function(){
+                laydate({
+                    elem:'#callTime',//绑定的元素
+                    type:'datetime',
+                    format:'YYYY-MM-DD hh:mm:ss',//时间格式20171219
+                    position: 'static',//位置
+                    istoday: true, //是否显示今天
+                    choose: function(datas){ //选择日期完毕的回调
+                        ## vm.customerServiceEvent.callTime = datas;
+                    }
+                });
+            },
+            info: function() {
+                if(id == null || id == undefined ) {
+                    return;
+                }
+                $.get(baseURL + "$pathName/info/"+id, function(r){
+                    if(r.code == 200){
+                        vm.$pathName = r.vo;
+                    }
+                });
+            },
+            closeDialog: function () {
+                window.dialog.an_dialog("close", "$pathName");
+            }
+        },
+        mounted() {
+            this.info();
+        },
+
+    });
+});

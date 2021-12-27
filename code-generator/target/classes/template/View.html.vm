@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${comments}</title>
+    #set($header='<#include "/import.html">')
+    $header
+    <script src="${request.contextPath}/statics/js/modules/${pathName}/${pathName}Edit.js"></script>
+</head>
+<body style="height: 98%">
+<div class="g-layout" id="rrapp" v-cloak style="margin-top: 10px;">
+    <form id="channelInfoForm" class="layout-center f-p f-p-t-n">
+        <div class="f-bg-white f-p f-shadow">
+            <table class="m-table-forms">
+                <colgroup>
+                    <col width="120px">
+                    <col>
+                    <col width="120px">
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    #set($brandIndex=1)
+                    #foreach($column in $columns)
+                        #if($!{column.attrname} != "")
+                            <td class="table-header req">$!{column.comments}</td>
+                            <td><input type="text" verify="required" readonly v-model="${pathName}.${column.attrname}" class="u-input f-m-b-xs" style="width: 100%;" placeholder="请输入${column.comments}"></td>
+                            #if($!brandIndex % 2 == 0)
+                            </tr>
+                            <tr>
+                            #end
+                            #set($brandIndex=$brandIndex+1)
+                        #end
+                    #end
+                </tr>
+                </tbody>
+            </table>
+            <div class="u-alert f-m-t">
+                <p class="title">提示：</p>
+                <p>为了让用户活动更好地使用体验，在一些负责表单已经编写填报注意事项。</p>
+            </div>
+
+        </div>
+    </form>
+    <div class="layout-foot" style="text-align: right; padding-right: 15px;">
+        <button class="u-btn texture dark" @click="closeDialog">取消</button>
+    </div>
+</div>
+</body>
+</html>

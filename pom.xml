@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>com.local.springboot</groupId>
+    <artifactId>springcloud-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>springcloud-parent</name>
+    <description>Demo project for Spring Boot</description>
+
+    <!--打包方式改为pom-->
+    <packaging>pom</packaging>
+
+    <!--子模块信息-->
+    <modules>
+<!--        <module>springboot-parent</module>-->
+        <module>eureka-server</module>
+        <module>client-provider</module>
+        <module>client-customer</module>
+        <module>ribbon-provider</module>
+        <module>zuul-server</module>
+        <module>sso-server</module>
+        <module>config-server</module>
+    </modules>
+
+    <!--版本统一管理-->
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>2020.0.2</spring-cloud.version>
+        <!-- lombok -->
+        <lombok.version>1.18.20</lombok.version>
+        <!-- MyBatis-Plus -->
+        <mybatis-plus.version>3.4.0</mybatis-plus.version>
+        <!--mysql-->
+        <mysql.version>8.0.26</mysql.version>
+    </properties>
+    <dependencies>
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+
+        <!--添加MyBatis-Plus依赖 -->
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
+<!--            <version>${mybatis-plus.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash;mysql&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>${mysql.version}</version>-->
+<!--        </dependency>-->
+    </dependencies>
+</project>

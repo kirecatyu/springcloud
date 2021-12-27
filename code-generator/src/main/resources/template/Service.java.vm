@@ -1,0 +1,47 @@
+package ${package}.api.service;
+
+import ${mainPath}.common.util.http.ApiResult;
+import ${mainPath}.common.util.page.PageUtils;
+import ${package}.api.entity.${className}Entity;
+import ${package}.api.vo.${className}Vo;
+import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.Map;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+public interface ${className}Service extends IService<${className}Entity> {
+
+    /**
+    * 查询分页列表数据
+    * @param params
+    * @return
+    */
+    PageUtils queryForPage(Map<String, Object> params);
+
+    /**
+     * 保存
+     * @param vo
+     * @return
+     */
+    ApiResult save${className}(${className}Vo vo);
+
+    /**
+     * 通过主键获取VO信息
+     * @param id
+     * @return
+     */
+     ${className}Vo getVoById(String id);
+
+    /**
+     * 删除
+     * @param id
+     */
+    void del(String id);
+}
+

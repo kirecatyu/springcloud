@@ -1,0 +1,11 @@
+com\local\springboot\zuul\zuulserver\filter\MyAccessFilter.class
+com\local\springboot\zuul\zuulserver\ZuulServerApplication.class
+com\local\springboot\zuul\zuulserver\config\ZuulConfiguration$LookupHandlerCallbackFilter.class
+com\local\springboot\zuul\zuulserver\feign\MyFeign.class
+com\local\springboot\zuul\zuulserver\controller\TestController.class
+com\local\springboot\zuul\zuulserver\config\FilterConfiguration.class
+com\local\springboot\zuul\zuulserver\feign\MyFeignFallback.class
+com\local\springboot\zuul\zuulserver\config\ZuulConfiguration$ZuulPostProcessor.class
+com\local\springboot\zuul\zuulserver\config\ZuulConfiguration$LookupHandlerMethodInterceptor.class
+com\local\springboot\zuul\zuulserver\feign\MyFeignFallbackFactory.class
+com\local\springboot\zuul\zuulserver\config\ZuulConfiguration.class

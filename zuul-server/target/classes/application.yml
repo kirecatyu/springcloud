@@ -1,0 +1,31 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: zuul-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+    instance:
+      prefer-ip-address: true
+      instance-id: 127.0.0.1:8088
+
+zuul:
+  routes:
+    client-provider:
+      url: http://127.0.0.1:8081
+      path: /client-provider/**
+    client-customer:
+      url: http://127.0.0.1:8082
+      path: /client-customer/**
+    sso-server:
+      url: http://127.0.0.1:11033
+      path: /sso-server/**
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
+  #Zuul丢失Cookie的解决方案：
+  sensitive-headers:

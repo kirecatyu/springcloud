@@ -1,0 +1,12 @@
+mkdir ${projectDir}\\${projectName}-api\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\api\entity
+mkdir ${projectDir}\\${projectName}-api\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\api\vo
+mkdir ${projectDir}\\${projectName}-api\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\api\dto
+move main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\entity\*.java ${projectDir}\\${projectName}-api\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\api\entity
+move main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\vo\*.java ${projectDir}\\${projectName}-api\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\api\vo
+move main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\dto\*.java ${projectDir}\\${projectName}-api\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\api\dto
+
+mkdir ${projectDir}\\${projectName}-service\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\service
+mkdir ${projectDir}\\${projectName}-service\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\mapper
+move main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\service ${projectDir}\\${projectName}-service\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}
+
+pause
