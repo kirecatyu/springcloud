@@ -1,7 +1,0 @@
-rd /s/q ${projectDir}\\${projectName}-api\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\api\entity
-rd /s/q ${projectDir}\\${projectName}-api\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\api\vo
-rd /s/q ${projectDir}\\${projectName}-api\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\api\dto
-
-rd /s/q ${projectDir}\\${projectName}-service\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\service
-rd /s/q ${projectDir}\\${projectName}-service\src\main\java\com\wisesoft\mall\\${projectName}\\${moduleName}\mapper
-pause
